@@ -1,0 +1,13 @@
+{
+  "name": "react-native-siesta-reporting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "moment": "^2.29.1",
+    "react": "^17.0.2"
+  }
+}
