@@ -1,10 +1,10 @@
-import {useEffect, useState} from 'react';
-import moment from 'moment';
+import { useEffect, useState } from "react";
+import moment from "moment";
 
 export const useStoreReports = (data, filter) => {
-    const [filteredData, setFilteredData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
 
-    const {dateStart, dateEnd} = filter;
+  const { dateStart, dateEnd } = filter;
 
   useEffect(() => {
     if (dateStart && dateEnd) {
@@ -23,4 +23,8 @@ export const useStoreReports = (data, filter) => {
       setFilteredData(data);
     }
   }, [dateStart, dateEnd, data]);
+
+  return {
+    data: filteredData,
+  };
 };
